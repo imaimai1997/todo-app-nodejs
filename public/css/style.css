@@ -1,0 +1,19 @@
+header{
+  padding: 20px 10px;
+  background-color: blueviolet;
+  color: white;
+  font-weight: 700;
+}
+
+h1{
+  font-weight: 400;
+  
+}
+
+.container{
+  margin-top: 20px;
+}
+
+input{
+  padding: 10px;
+}
