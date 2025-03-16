@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TODO APP</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <body>
+      <header>Node.js-express</header>
+      <div class="container">
+      <h1>TODOAPP</h1>
+      <form action="/create" method="post">
+      <input type="text" name="title">
+      <button>追加</button>
+    </form>
+      <ul>
+        
+         <% items.forEach(item =>{ %>
+        
+        
+           <li><%=item.title %></li>
+           <form action="/delete/<%=item.id%>" method="post">
+           <button>削除</button>
+           <a href="/edit/<%=item.id%>">編集</a>
+          </form>
+ 
+         <%  }); %>
+      </ul>
+    </div>
+    </body>
+  </head>
+</html>
